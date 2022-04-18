@@ -9,7 +9,7 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/diamondburned/solar"
+	"github.com/ejfhp/solar"
 )
 
 var (
@@ -52,11 +52,10 @@ func main() {
 	printTime("sunset time", sun.Sunset)
 	printTime("dusk time", sun.Dusk)
 
-	lo := solar.Temperature(lowTemp)
-	hi := solar.Temperature(highTemp)
+	// lo := solar.Temperature(lowTemp)
+	// hi := solar.Temperature(highTemp)
 
-	printlnf("current color temperature: %.0fK",
-		solar.CalculateTemperature(now, latitude, longitude, lo, hi))
+	// printlnf("current color temperature: %.0fK", solar.CalculateTemperature(now, latitude, longitude, lo, hi))
 }
 
 func printTime(name string, t time.Time) {

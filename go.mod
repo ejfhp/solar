@@ -1,4 +1,4 @@
-module github.com/diamondburned/solar
+module github.com/ejfhp/solar
 
 go 1.17
 
